@@ -20,24 +20,16 @@ namespace BRANCHING_SUBMISSION_ASSIGNMENT
                 return;
             }
 
-            Console.WriteLine("Please enter the package height:");
-            int height = Convert.ToInt32(Console.ReadLine());
-            if (height > 50)
-            {
-                Console.WriteLine("Package too big to be shipped via Package Express. Have a good day.");
-                return;
-            }
-
-            Console.WriteLine("Please enter the package length:");
-           int length = Convert.ToInt32(Console.ReadLine());
-            if (length > 50)
-            {
-                Console.WriteLine("Package too big to be shipped via Package Express. Have a good day.");
-                return;
-            }
             Console.WriteLine("Please enter the package width:");
             int width = Convert.ToInt32(Console.ReadLine());
-            if (width > 50)
+
+            Console.WriteLine("Please enter the package height:");
+            int height = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter the package length:");
+            int length = Convert.ToInt32(Console.ReadLine());
+
+            if (width + height + length > 50)
             {
                 Console.WriteLine("Package too big to be shipped via Package Express. Have a good day.");
                 return;
